@@ -25,7 +25,7 @@ hos_df = hos_df.replace("NaN",None)   #correction
 
 hos_df.show()
 hos_df = hos_df.dropDuplicates()
-hos_df = hos_df.drop("Unnamed: 0)
+hos_df = hos_df.drop("Unnamed": 0)
 
 # COMMAND ----------
 
