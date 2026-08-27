@@ -15,7 +15,11 @@ claims_df = read_bronze_json("Claims")
 
 # COMMAND ----------
 
-claims_df = claims_df.drop("_id")
+# added for git practice
+claims.groupBy("Claim_Or_Rejected").agg(sum("Claim_Or_Rejected").alias("git_practice"))
+claims.count()
+claims.show()
+claims.select("*")
 
 # COMMAND ----------
 
